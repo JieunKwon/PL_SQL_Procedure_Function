@@ -37,13 +37,21 @@ then it will propagate to the calling block.
 Difference between procedure and function
 ----
 
-Functions −  return a single value; mainly used to compute and return a value.
-              Use RETURN to return the value and it is mandatory.
-              A Function that contains no DML statements can be called in SELECT statement
+- Functions −  
+
+return a single value; mainly used to compute and return a value.
+
+Use RETURN to return the value and it is mandatory.
               
-Procedures −  do not return a value directly; mainly used to perform an action.
-              Use OUT parameter to return the value  
-              Cannot call in SELECT statement
+A Function that contains no DML statements can be called in SELECT statement
+              
+- Procedures −  
+
+do not return a value directly; mainly used to perform an action.
+
+Use OUT parameter to return the value  
+              
+Cannot call in SELECT statement
  
  
 # Procedure
