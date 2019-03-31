@@ -1,6 +1,6 @@
-# PL_SQL_Procedure_Function
+# PL_SQL Procedure and Function
 
-PLSQL for procedure and funtion
+ 
 
 <a href='https://www.oracle.com/database/technologies/appdev/plsql.html' target='_blank'>Link to Oracle</a>
 
