@@ -11,6 +11,15 @@ Why create and use procedure or function
 
 Once creating produre or function in a database, can call and use several times. 
 
+
+How different between procedure and function
+----
+
+Functions −  return a single value; mainly used to compute and return a value.
+
+Procedures −  do not return a value directly; mainly used to perform an action.
+
+
 Procedure
 ---
 
@@ -28,15 +37,19 @@ Procedure
      
      DROP PROCEDURE procedure_name
      
-     << call >>
+     << call 1 >>
      
      BEGIN
         procedure_name(value1, value2);
      END;
 
-     << call >>
+     << call 2 >>
      
      CALL procedure_name(value1, value2);
+     
+     << call 3 >>
+     
+     EXECUTE procedure_name(value1, value2);
     
 Parameters
 ------
