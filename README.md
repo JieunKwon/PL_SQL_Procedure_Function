@@ -54,7 +54,7 @@ Use OUT parameter to return the value
 Cannot call in SELECT statement
  
  
-# Procedure
+# < Procedure >
 
 Create and Drop
 -------
@@ -128,7 +128,7 @@ Methods for Passing Parameters
     procedure_name(a, b, c, m => d);
     
     
-# Function
+# < Function >
 
 Create 
 -------
