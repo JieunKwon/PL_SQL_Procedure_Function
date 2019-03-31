@@ -174,4 +174,24 @@ Execute
     
     => Total no. of Customers: 6  
     
-    
+Built-in Functions in PL/SQL
+-----
+
+< useful functions > 
+
+TO_CHAR	- Converts the other datatype to character datatype	 
+
+INSTR(text, string, start, occurance) - Gives the position of particular text in the given string
+
+SUBSTR ( text, start, length)	- Gives the substring value of the main string
+
+UPPER ( text )	- Returns the uppercase of the provided text
+
+LOWER ( text )	- Returns the lowercase of the provided text
+
+LTRIM ( text )	RTRIM( text ) - Trims the leading white space from the text
+
+SYSDATE	 - Returns the current date and time of the server
+
+
+LENGTH ( text )	Returns the length of the given string
