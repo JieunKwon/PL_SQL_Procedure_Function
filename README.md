@@ -4,7 +4,11 @@ PLSQL for procedure and funtion
 
 <a href='https://www.oracle.com/database/technologies/appdev/plsql.html' target='_blank'>Link to Oracle</a>
 
-<a href='https://www.tutorialspoint.com/plsql' target='_blank'>Link to tutorials Point</a>   
+<a href='https://www.tutorialspoint.com/plsql/plsql_procedures.htm' target='_blank'>Link to tutorials Point/ Procedure</a>   
+
+<a href='https://www.tutorialspoint.com/plsql/plsql_functions.htm' target='_blank'>Link to tutorials Point/ Function</a>   
+
+
 
 Why create and use procedure or function
 -----
@@ -94,4 +98,46 @@ Methods for Passing Parameters
     procedure_name(a, b, c, m => d);
     
     
+# Function
 
+Create 
+-------
+
+    CREATE [OR REPLACE] FUNCTION function_name 
+    [(parameter_name [IN | OUT | IN OUT] type [, ...])] 
+    RETURN return_datatype 
+    {IS | AS} 
+    BEGIN 
+       < function_body > 
+    END [function_name];
+    
+       
+    << example >>
+    
+    CREATE OR REPLACE FUNCTION totalCustomers 
+    RETURN number IS 
+       total number(2) := 0; 
+    BEGIN 
+       SELECT count(*) into total 
+       FROM customers; 
+
+       RETURN total; 
+    END; 
+    / 
+    
+Execute
+-----
+    
+    << calling funtion above >>
+    
+    DECLARE 
+       c number(2); 
+    BEGIN 
+       c := totalCustomers(); 
+       dbms_output.put_line('Total no. of Customers: ' || c); 
+    END; 
+    /
+    
+    => Total no. of Customers: 6  
+    
+    
