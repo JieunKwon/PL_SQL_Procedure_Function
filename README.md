@@ -20,8 +20,10 @@ Functions −  return a single value; mainly used to compute and return a value.
 Procedures −  do not return a value directly; mainly used to perform an action.
 
 
-Procedure
----
+# Procedure
+
+Create and Drop
+-------
 
     << create >>
     
@@ -36,7 +38,10 @@ Procedure
      << drop >>
      
      DROP PROCEDURE procedure_name
-     
+
+Execute
+------
+
      << call 1 >>
      
      BEGIN
@@ -78,12 +83,15 @@ Methods for Passing Parameters
 
 • Positional notation
 
-procedure_name(a, b, c, d);
+    procedure_name(a, b, c, d);
 
 • Named notation
 
-procedure_name(x => a, y => b, z => c, m => d);
+    procedure_name(x => a, y => b, z => c, m => d);
 
 • Mixed notation
 
-procedure_name(a, b, c, m => d);
+    procedure_name(a, b, c, m => d);
+    
+    
+
