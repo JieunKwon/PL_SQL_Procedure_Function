@@ -13,17 +13,39 @@ PLSQL for procedure and funtion
 Why create and use procedure or function
 -----
 
+Procedure and Funtion are subprograms that consists of a group of PL/SQL statements.
+
+This subprogram unit is stored as a database object.
+
 Once creating produre or function in a database, can call and use several times. 
 
 
-How different between procedure and function
+Similarities between Procedure and Function
+-----
+
+-Both can be called from other PL/SQL blocks.
+
+-If the exception raised in the subprogram is not handled in the subprogram exception handling section, 
+
+then it will propagate to the calling block.
+
+-Both can have as many parameters as required.
+
+-Both are treated as database objects in PL/SQL.
+
+
+Difference between procedure and function
 ----
 
 Functions −  return a single value; mainly used to compute and return a value.
-
+              Use RETURN to return the value and it is mandatory.
+              A Function that contains no DML statements can be called in SELECT statement
+              
 Procedures −  do not return a value directly; mainly used to perform an action.
-
-
+              Use OUT parameter to return the value  
+              Cannot call in SELECT statement
+ 
+ 
 # Procedure
 
 Create and Drop
@@ -102,6 +124,10 @@ Methods for Passing Parameters
 
 Create 
 -------
+
+Function use RETURN keyword to return the value.
+
+Return is mandatory in functions and the datatype is defined at the time of creation.
 
     CREATE [OR REPLACE] FUNCTION function_name 
     [(parameter_name [IN | OUT | IN OUT] type [, ...])] 
