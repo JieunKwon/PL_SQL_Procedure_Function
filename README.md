@@ -14,7 +14,7 @@ Once creating produre or function in a database, can call and use several times.
 Procedure
 ---
 
-    < create >
+    << create >>
     
     CREATE [OR REPLACE] PROCEDURE procedure_name
     [(
@@ -23,14 +23,18 @@ Procedure
     )]
     {IS | AS}
       pl_sql_block
-      
-     < call >
+     
+     << drop >>
+     
+     DROP PROCEDURE procedure_name
+     
+     << call >>
      
      BEGIN
         procedure_name(value1, value2);
      END;
 
-     < call >
+     << call >>
      
      CALL procedure_name(value1, value2);
     
@@ -40,12 +44,19 @@ Parameters
 defalut is IN.
 
 • IN
-procedure must be called with a value for the parameter. Value cannot be changed
+
+Procedure must be called with a value for the parameter. 
+
+Value cannot be changed
 
 • OUT
-procedure must be called with a variable for the parameter. Changes to the parameter are seen by the user (i.e., call by reference)
+
+Procedure must be called with a variable for the parameter. 
+
+Changes to the parameter are seen by the user (i.e., call by reference)
 
 • IN OUT
-value can be sent, and changes to the parameter are seen by the user
+
+Value can be sent, and changes to the parameter are seen by the user
 
 
