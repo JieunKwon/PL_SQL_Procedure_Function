@@ -60,7 +60,7 @@ defalut is IN.
 
 Procedure must be called with a value for the parameter. 
 
-Value cannot be changed
+Value cannot be changed, read-only parameter
 
 • OUT
 
@@ -73,3 +73,17 @@ Changes to the parameter are seen by the user (i.e., call by reference)
 Value can be sent, and changes to the parameter are seen by the user
 
 
+Methods for Passing Parameters
+-----
+
+• Positional notation
+
+procedure_name(a, b, c, d);
+
+• Named notation
+
+procedure_name(x => a, y => b, z => c, m => d);
+
+• Mixed notation
+
+procedure_name(a, b, c, m => d);
