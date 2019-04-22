@@ -39,12 +39,15 @@ Difference between procedure and function
 
 - Functions −  
 
-return a single value; mainly used to compute and return a value.
+return a single value; 
+
+mainly used to compute and return a value.
 
 Use RETURN to return the value and it is mandatory.
               
 A Function that contains no DML statements can be called in SELECT statement
               
+
 - Procedures −  
 
 do not return a value directly; mainly used to perform an action.
